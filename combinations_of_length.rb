@@ -1,3 +1,6 @@
+# algorithm to print all possible strings which are of a given length
+# which can be made from a set of characters
+
 require 'set'
 
 

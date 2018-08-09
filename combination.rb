@@ -1,4 +1,6 @@
-$count = 0
+# algorithm to print all the possible permutations of a string
+# takes a string and prints all possible permutations
+
 def swap(input, initial, final)
   temp = input[initial]
   input[initial] = input[final]
@@ -7,7 +9,6 @@ end
 
 def combinations(input, left, right)
   if left == right
-    $count+=1
     puts input
   else
     for i in (left..right) do
@@ -22,4 +23,3 @@ puts "Enter the word for permutations to be created..."
 input = gets.chomp
 puts "Going to print all the possible combinations...."
 combinations(input,0, input.length-1)
-puts "Total number of words are #{$count}"
